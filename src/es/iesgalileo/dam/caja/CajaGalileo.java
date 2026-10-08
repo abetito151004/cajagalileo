@@ -24,17 +24,17 @@ public class CajaGalileo {
 		
 		//Imprimimos los resultados
 		//Me apetecia probar con un if para que cambiara la informacion del ticket :)
-		System.out.println("Subtotal:" + subtotal +"€");
+		System.out.printf("Subtotal:%.2f€%n", subtotal);
 		
 		if (socio) {
-		System.out.println("Descuento:" + importeDescuento + "€");
+		System.out.printf("Descuento: %.3f€%n", importeDescuento);
 		}
 		
 		if (socio) { 
-			System.out.println("Precio con descuento por socio:" + importeDescontado + "€");
+			System.out.printf("Precio con descuento por socio: %.2f€%n",importeDescontado);
 		}
-		System.out.println("IVA:" + importeIva + "€");
-		System.out.println("Su total es de:" + importeFinal +"€");
+		System.out.printf("IVA: %.3f€ %n", importeIva);
+		System.out.printf("Su total es de: %.3f€ %n",importeFinal);
 		
 		
 	}
